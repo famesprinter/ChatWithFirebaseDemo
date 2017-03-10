@@ -13,7 +13,7 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let context = Context.context
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,7 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(err.localizedDescription)
                 return
             }
-            print("USER: \(user?.uid)")
+            
+            if let userID = user?.uid {
+                self.context.updateUserID(uID: userID)
+                print("USER: \(self.context.uID())")
+            } else {
+                print("No User ID")
+            }
+            
         })
         
         return true

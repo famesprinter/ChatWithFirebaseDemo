@@ -14,6 +14,7 @@
 		F030C8161E724DC1008C85C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F030C8141E724DC1008C85C1 /* LaunchScreen.storyboard */; };
 		F030C81E1E7253C6008C85C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */; };
 		F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */; };
+		F030C8271E725E55008C85C1 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8261E725E55008C85C1 /* Context.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F030C8171E724DC1008C85C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewController.swift; sourceTree = "<group>"; };
+		F030C8261E725E55008C85C1 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				F030C8201E725D2E008C85C1 /* Assets */,
 				F030C8211E725D38008C85C1 /* Layout */,
+				F030C8251E725E32008C85C1 /* Context */,
 				F030C8221E725D46008C85C1 /* Controller */,
 				F030C81F1E725405008C85C1 /* Supporting Files */,
 			);
@@ -121,6 +124,14 @@
 				F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F030C8251E725E32008C85C1 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				F030C8261E725E55008C85C1 /* Context.swift */,
+			);
+			path = Context;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F030C8271E725E55008C85C1 /* Context.swift in Sources */,
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
 				F030C80C1E724DC1008C85C1 /* AppDelegate.swift in Sources */,
 			);

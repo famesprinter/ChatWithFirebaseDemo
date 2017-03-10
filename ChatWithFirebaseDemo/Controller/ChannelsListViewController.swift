@@ -9,7 +9,10 @@
 import UIKit
 
 class ChannelsListViewController: UIViewController {
-
+    // MARK: - Variable
+    let context = Context.context
+    
+    // MARK: = Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
