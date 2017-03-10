@@ -13,6 +13,7 @@
 		F030C8111E724DC1008C85C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F030C80F1E724DC1008C85C1 /* Main.storyboard */; };
 		F030C8131E724DC1008C85C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F030C8121E724DC1008C85C1 /* Assets.xcassets */; };
 		F030C8161E724DC1008C85C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F030C8141E724DC1008C85C1 /* LaunchScreen.storyboard */; };
+		F030C81E1E7253C6008C85C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F030C8121E724DC1008C85C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F030C8151E724DC1008C85C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F030C8171E724DC1008C85C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +80,23 @@
 		F030C80A1E724DC1008C85C1 /* ChatWithFirebaseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F030C80B1E724DC1008C85C1 /* AppDelegate.swift */,
-				F030C80D1E724DC1008C85C1 /* ViewController.swift */,
-				F030C80F1E724DC1008C85C1 /* Main.storyboard */,
 				F030C8121E724DC1008C85C1 /* Assets.xcassets */,
-				F030C8141E724DC1008C85C1 /* LaunchScreen.storyboard */,
-				F030C8171E724DC1008C85C1 /* Info.plist */,
+				F030C80F1E724DC1008C85C1 /* Main.storyboard */,
+				F030C80D1E724DC1008C85C1 /* ViewController.swift */,
+				F030C81F1E725405008C85C1 /* Supporting Files */,
 			);
 			path = ChatWithFirebaseDemo;
+			sourceTree = "<group>";
+		};
+		F030C81F1E725405008C85C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F030C8141E724DC1008C85C1 /* LaunchScreen.storyboard */,
+				F030C80B1E724DC1008C85C1 /* AppDelegate.swift */,
+				F030C8171E724DC1008C85C1 /* Info.plist */,
+				F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F030C8161E724DC1008C85C1 /* LaunchScreen.storyboard in Resources */,
+				F030C81E1E7253C6008C85C1 /* GoogleService-Info.plist in Resources */,
 				F030C8131E724DC1008C85C1 /* Assets.xcassets in Resources */,
 				F030C8111E724DC1008C85C1 /* Main.storyboard in Resources */,
 			);
@@ -377,6 +389,7 @@
 				F030C81C1E724DC1008C85C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
