@@ -15,6 +15,7 @@
 		F030C81E1E7253C6008C85C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */; };
 		F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */; };
 		F030C8271E725E55008C85C1 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8261E725E55008C85C1 /* Context.swift */; };
+		F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F030C81D1E7253C6008C85C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewController.swift; sourceTree = "<group>"; };
 		F030C8261E725E55008C85C1 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F030C8211E725D38008C85C1 /* Layout */,
 				F030C8251E725E32008C85C1 /* Context */,
 				F030C8221E725D46008C85C1 /* Controller */,
+				F030C8281E726162008C85C1 /* ViewModel */,
 				F030C81F1E725405008C85C1 /* Supporting Files */,
 			);
 			path = ChatWithFirebaseDemo;
@@ -132,6 +135,14 @@
 				F030C8261E725E55008C85C1 /* Context.swift */,
 			);
 			path = Context;
+			sourceTree = "<group>";
+		};
+		F030C8281E726162008C85C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				F030C8271E725E55008C85C1 /* Context.swift in Sources */,
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
+				F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */,
 				F030C80C1E724DC1008C85C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
