@@ -19,6 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FIRApp.configure()
         
+        FIRAuth.auth()?.signInAnonymously(completion: { (user, error) in
+            if let err = error {
+                print(err.localizedDescription)
+                return
+            }
+            print("USER: \(user?.uid)")
+        })
+        
         return true
     }
 

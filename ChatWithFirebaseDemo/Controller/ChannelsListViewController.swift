@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChannelsListViewController.swift
 //  ChatWithFirebaseDemo
 //
 //  Created by Kittitat Rodphotong on 3/10/2560 BE.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChannelsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
 }
-
