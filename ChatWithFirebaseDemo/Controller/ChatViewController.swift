@@ -12,6 +12,7 @@ import JSQMessagesViewController
 
 class ChatViewController: JSQMessagesViewController {
     // MARK: Variable
+    let viewModel = ChatViewModel()
     var channel: Channel? {
         didSet {
             title = channel?.name
@@ -53,22 +54,22 @@ class ChatViewController: JSQMessagesViewController {
     
     func addMessage(withId id: String, name: String, text: String) {
         if let message = JSQMessage(senderId: id, displayName: name, text: text) {
-            messages.append(message)
+            viewModel.addMessage(message: message)
         }
     }
     
     // MARK: Collection View
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageDataForItemAt indexPath: IndexPath!) -> JSQMessageData! {
-        return messages[indexPath.item]
+        return viewModel.messageDataForItem(row: indexPath.item)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return messages.count
+        return viewModel.numberOfItemsInSection()
     }
     
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
-        let message = messages[indexPath.item]
-        if message.senderId == senderId {
+        let message = viewModel.messageDataForItem(row: indexPath.item)
+        if message.senderId() == senderId {
             return outgoingBubbleImageView
         } else {
             return incomingBubbleImageView

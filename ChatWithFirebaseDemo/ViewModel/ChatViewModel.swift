@@ -14,6 +14,17 @@ class ChatViewModel {
     private(set) var messages = [JSQMessage]()
     
     // MARK: Function
+    func addMessage(message: JSQMessage) {
+        messages.append(message)
+    }
     
+    // Collection View
+    func numberOfItemsInSection() -> Int {
+        return messages.count
+    }
+    
+    func messageDataForItem(row: Int) -> JSQMessageData {
+        return messages[row]
+    }
     
 }
