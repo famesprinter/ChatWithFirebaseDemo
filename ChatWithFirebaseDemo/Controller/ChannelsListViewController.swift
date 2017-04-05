@@ -9,7 +9,11 @@
 import UIKit
 
 class ChannelsListViewController: UIViewController {
+    // MARK: - IBOutlet
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: - Variable
+    
     
     // MARK: = Life Cycle
     override func viewDidLoad() {

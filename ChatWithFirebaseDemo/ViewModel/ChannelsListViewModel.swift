@@ -12,6 +12,6 @@ class ChannelsListViewModel {
     // MARK: - Variable
     let context = Context.context
     
-    // MARK: -Function
+    // MARK: - Function
     
 }
