@@ -17,6 +17,7 @@
 		F030C8271E725E55008C85C1 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8261E725E55008C85C1 /* Context.swift */; };
 		F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */; };
 		F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */; };
+		F06EDA171E94A4F300EE07BC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA161E94A4F300EE07BC /* Channel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F030C8261E725E55008C85C1 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModel.swift; sourceTree = "<group>"; };
 		F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListInteractor.swift; sourceTree = "<group>"; };
+		F06EDA161E94A4F300EE07BC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		F06EDA151E94A4AD00EE07BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F06EDA161E94A4F300EE07BC /* Channel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F030C8271E725E55008C85C1 /* Context.swift in Sources */,
+				F06EDA171E94A4F300EE07BC /* Channel.swift in Sources */,
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
 				F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */,
 				F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */,
