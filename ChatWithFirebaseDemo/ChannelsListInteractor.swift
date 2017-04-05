@@ -12,7 +12,6 @@ import Firebase
 class ChannelsListInteractor {
     // MARK: - Variable
     private(set) lazy var channelRef = FIRDatabase.database().reference().child("channels")
-    private let FIRChild = "channels"
     private var channelRefHandle: FIRDatabaseHandle?
 
     // MARK: - Function

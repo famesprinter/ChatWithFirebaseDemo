@@ -82,4 +82,16 @@ class ChatViewController: JSQMessagesViewController {
         avatarImg?.avatarImage = JSQMessagesAvatarImageFactory.circularAvatarImage(image!,withDiameter: UInt(kJSQMessagesCollectionViewAvatarSizeDefault))
         return avatarImg
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! JSQMessagesCollectionViewCell
+        let message = viewModel.messageDataForItem(row: indexPath.item)
+        
+        if message.senderId() == senderId {
+            cell.textView?.textColor = UIColor.white
+        } else {
+            cell.textView?.textColor = UIColor.black
+        }
+        return cell
+    }
 }

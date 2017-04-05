@@ -22,6 +22,7 @@
 		F06EDA1C1E94C8AC00EE07BC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA1B1E94C8AC00EE07BC /* ChatViewController.swift */; };
 		F06EDA1E1E94D74800EE07BC /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F06EDA1D1E94D74800EE07BC /* Avatar.png */; };
 		F06EDA201E94DA6600EE07BC /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */; };
+		F06EDA221E94DEC000EE07BC /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA211E94DEC000EE07BC /* ChatInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F06EDA1B1E94C8AC00EE07BC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F06EDA1D1E94D74800EE07BC /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
 		F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		F06EDA211E94DEC000EE07BC /* ChatInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */,
+				F06EDA211E94DEC000EE07BC /* ChatInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				F030C8271E725E55008C85C1 /* Context.swift in Sources */,
 				F06EDA171E94A4F300EE07BC /* Channel.swift in Sources */,
+				F06EDA221E94DEC000EE07BC /* ChatInteractor.swift in Sources */,
 				F06EDA1C1E94C8AC00EE07BC /* ChatViewController.swift in Sources */,
 				F06EDA1A1E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift in Sources */,
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
