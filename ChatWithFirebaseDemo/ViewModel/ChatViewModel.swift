@@ -26,6 +26,21 @@ class ChatViewModel {
                                    text: text)
     }
     
+    // API
+    func observeMessages(chId: String) {
+        interactor.FIRObserveMessages(cannelId: chId,
+                                      complete: { (messageData: [String:String]) in
+                                        let id = messageData["senderId"]
+                                        let name = messageData["senderName"]
+                                        let text = messageData["text"]
+//                                        addMessage(withId: id, name: name, text: text)
+//                                        finishReceivingMessage()
+        },
+                                      fail: { () in
+                                        print("Error! Could not decode message data")
+        })
+    }
+    
     // Collection View
     func numberOfItemsInSection() -> Int {
         return messages.count
