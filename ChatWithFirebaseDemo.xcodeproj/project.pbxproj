@@ -21,6 +21,7 @@
 		F06EDA1A1E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */; };
 		F06EDA1C1E94C8AC00EE07BC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA1B1E94C8AC00EE07BC /* ChatViewController.swift */; };
 		F06EDA1E1E94D74800EE07BC /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F06EDA1D1E94D74800EE07BC /* Avatar.png */; };
+		F06EDA201E94DA6600EE07BC /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModelDelegate.swift; sourceTree = "<group>"; };
 		F06EDA1B1E94C8AC00EE07BC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F06EDA1D1E94D74800EE07BC /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */,
+				F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
 				F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */,
 				F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */,
+				F06EDA201E94DA6600EE07BC /* ChatViewModel.swift in Sources */,
 				F030C80C1E724DC1008C85C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

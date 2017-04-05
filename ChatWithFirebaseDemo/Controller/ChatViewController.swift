@@ -17,7 +17,6 @@ class ChatViewController: JSQMessagesViewController {
             title = channel?.name
         }
     }
-    var messages = [JSQMessage]()
     lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
     lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
 
