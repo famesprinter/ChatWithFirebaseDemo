@@ -20,7 +20,12 @@ class ChannelsListViewController: UIViewController {
     // MARK: = Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        viewModel.observeChannels()
+    }
+    
+    deinit {
+        viewModel.removeObserveChannels()
     }
 }
 

@@ -26,6 +26,16 @@ class ChannelsListViewModel {
     }
     
     // API
+    func createChannel() {
+        interactor.FIRCreateChannel(cName: "Channel \(channels.count+1)",
+                                    complete: { () in
+                                        print("Create Channel Sucess :))")
+        },
+                                    fail: { () in
+                                        print("Create Channel Fail!!")
+        })
+    }
+    
     func observeChannels() {
         interactor.FIRObserveChannels(complete: { (snapshot: FIRDataSnapshot) in
                                         let channelData = snapshot.value as! [String:AnyObject]
@@ -36,6 +46,15 @@ class ChannelsListViewModel {
         },
                                       fail: { () in
                                         print("Error! Could not decode channel data")
+        })
+    }
+    
+    func removeObserveChannels() {
+        interactor.FIRRemoveObserveChannels(complete: { () in
+                                                print("Remove Success!!")
+        },
+                                            fail: { () in
+                                                print("Not observe!!")
         })
     }
     
