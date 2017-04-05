@@ -13,6 +13,8 @@ class ChannelsListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Variable
+    let viewModel = ChannelsListViewModel()
+    let channelCellIdentifier = "ChannelCell"
     
     
     // MARK: = Life Cycle
@@ -25,10 +27,13 @@ class ChannelsListViewController: UIViewController {
 // MARK: - UITableViewDelegate & UITableViewDataSource
 extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel.numberOfRow()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: channelCellIdentifier,
+                                                 for: indexPath)
+        cell.textLabel?.text = viewModel.channelData(row: indexPath.row)
+        return cell
     }
 }
