@@ -16,6 +16,7 @@
 		F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */; };
 		F030C8271E725E55008C85C1 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8261E725E55008C85C1 /* Context.swift */; };
 		F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */; };
+		F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F030C8231E725DA2008C85C1 /* ChannelsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewController.swift; sourceTree = "<group>"; };
 		F030C8261E725E55008C85C1 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModel.swift; sourceTree = "<group>"; };
+		F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				F030C8201E725D2E008C85C1 /* Assets */,
 				F030C8211E725D38008C85C1 /* Layout */,
 				F030C8251E725E32008C85C1 /* Context */,
+				F06EDA121E94A0FD00EE07BC /* Interactor */,
 				F030C8221E725D46008C85C1 /* Controller */,
 				F030C8281E726162008C85C1 /* ViewModel */,
 				F030C81F1E725405008C85C1 /* Supporting Files */,
@@ -145,6 +148,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F06EDA121E94A0FD00EE07BC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,7 +186,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = FameSprinter;
 				TargetAttributes = {
 					F030C8071E724DC0008C85C1 = {
@@ -272,6 +283,7 @@
 			files = (
 				F030C8271E725E55008C85C1 /* Context.swift in Sources */,
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
+				F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */,
 				F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */,
 				F030C80C1E724DC1008C85C1 /* AppDelegate.swift in Sources */,
 			);
@@ -394,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D370FB2D77C0AAA9226220C /* Pods-ChatWithFirebaseDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2P34PPMK7A;
 				INFOPLIST_FILE = ChatWithFirebaseDemo/Info.plist;
@@ -408,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D60D1F70538A6E03DCBB77E5 /* Pods-ChatWithFirebaseDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2P34PPMK7A;
 				INFOPLIST_FILE = ChatWithFirebaseDemo/Info.plist;
