@@ -36,7 +36,7 @@ class ChannelsListViewModel {
                                         let id = snapshot.key
                                         self.channels.append(Channel(id: id,
                                                                      name: channelData["name"] as! String))
-                                        self.delegate?.ObserveChannelSuccess()
+                                        self.delegate?.observeChannelSuccess()
         },
                                       fail: { () in
                                         print("Error! Could not decode channel data")

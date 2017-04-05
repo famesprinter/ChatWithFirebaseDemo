@@ -25,6 +25,7 @@ class ChatViewController: JSQMessagesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel.configureDelegate(delegate: self)
         senderDisplayName = "FameSprinteR"
         senderId = channel?.id
     }
@@ -95,5 +96,13 @@ class ChatViewController: JSQMessagesViewController {
                             text: text)
         JSQSystemSoundPlayer.jsq_playMessageSentSound()
         finishSendingMessage()
+    }
+}
+
+// MARK: ChatViewModelDelegate
+extension ChatViewController: ChatViewModelDelegate {
+    func observeMessageSuccess(id: String, name: String, text: String) {
+        addMessage(withId: id, name: name, text: text)
+        finishReceivingMessage()
     }
 }

@@ -23,6 +23,7 @@
 		F06EDA1E1E94D74800EE07BC /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F06EDA1D1E94D74800EE07BC /* Avatar.png */; };
 		F06EDA201E94DA6600EE07BC /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */; };
 		F06EDA221E94DEC000EE07BC /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA211E94DEC000EE07BC /* ChatInteractor.swift */; };
+		F06EDA241E94E7CC00EE07BC /* ChatViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA231E94E7CC00EE07BC /* ChatViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F06EDA1D1E94D74800EE07BC /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
 		F06EDA1F1E94DA6600EE07BC /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		F06EDA211E94DEC000EE07BC /* ChatInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
+		F06EDA231E94E7CC00EE07BC /* ChatViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */,
+				F06EDA231E94E7CC00EE07BC /* ChatViewModelDelegate.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */,
 				F06EDA201E94DA6600EE07BC /* ChatViewModel.swift in Sources */,
 				F030C80C1E724DC1008C85C1 /* AppDelegate.swift in Sources */,
+				F06EDA241E94E7CC00EE07BC /* ChatViewModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

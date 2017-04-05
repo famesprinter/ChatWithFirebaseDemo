@@ -11,10 +11,15 @@ import JSQMessagesViewController
 
 class ChatViewModel {
     // MARK: Variable
+    private weak var delegate: ChatViewModelDelegate?
     private let interactor = ChatInteractor()
     private(set) var messages = [JSQMessage]()
     
     // MARK: Function
+    func configureDelegate(delegate: ChatViewModelDelegate) {
+        self.delegate = delegate
+    }
+    
     func addMessage(message: JSQMessage) {
         messages.append(message)
     }
@@ -33,8 +38,6 @@ class ChatViewModel {
                                         let id = messageData["senderId"]
                                         let name = messageData["senderName"]
                                         let text = messageData["text"]
-//                                        addMessage(withId: id, name: name, text: text)
-//                                        finishReceivingMessage()
         },
                                       fail: { () in
                                         print("Error! Could not decode message data")

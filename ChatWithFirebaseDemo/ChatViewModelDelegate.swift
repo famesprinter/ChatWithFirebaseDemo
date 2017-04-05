@@ -1,5 +1,5 @@
 //
-//  ChannelsListViewModelDelegate.swift
+//  ChatViewModelDelegate.swift
 //  ChatWithFirebaseDemo
 //
 //  Created by Kittitat Rodphotong on 4/5/2560 BE.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ChannelsListViewModelDelegate: class {
-    func observeChannelSuccess()
+protocol ChatViewModelDelegate: class {
+    func observeMessageSuccess(id: String, name: String, text: String)
 }
