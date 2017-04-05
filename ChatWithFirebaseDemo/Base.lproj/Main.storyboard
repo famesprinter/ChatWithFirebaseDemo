@@ -31,6 +31,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ab5-N8-bWV" kind="show" id="m6N-eI-96H"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -61,6 +64,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1007" y="139"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="cab-3u-U1m">
+            <objects>
+                <viewController id="Ab5-N8-bWV" customClass="ChatViewController" customModule="ChatWithFirebaseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fre-fg-qtl"/>
+                        <viewControllerLayoutGuide type="bottom" id="UkK-i7-e10"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X9X-jY-J9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sv-rc-pKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="psY-Ja-sso">
