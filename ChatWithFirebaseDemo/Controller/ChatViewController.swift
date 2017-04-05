@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import Firebase
+import JSQMessagesViewController
 
-class ChatViewController: UIViewController {
+class ChatViewController: JSQMessagesViewController {
+    // MARK: - Variable
+    var channel: Channel? {
+        didSet {
+            title = channel?.name
+        }
+    }
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        senderDisplayName = "FameSprinteR"
+        senderId = channel?.id
     }
 }

@@ -15,8 +15,9 @@ class ChannelsListViewController: UIViewController {
     // MARK: - Variable
     let viewModel = ChannelsListViewModel()
     let channelCellIdentifier = "ChannelCell"
+    let showChannelIdentifier = "ShowChannel"
     
-    // MARK: = Life Cycle
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +29,17 @@ class ChannelsListViewController: UIViewController {
         viewModel.removeObserveChannels()
     }
     
-    // MARK: - IBAction
+    // MARK: prepareForSegue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if let channel = sender as? Channel {
+            let vc = segue.destination as! ChatViewController
+            vc.channel = channel
+        }
+    }
+    
+    // MARK: IBAction
     @IBAction func createChannel() {
         viewModel.createChannel()
     }
@@ -49,6 +60,9 @@ extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let channel = viewModel.channels[indexPath.row]
+        performSegue(withIdentifier: showChannelIdentifier, sender: channel)
     }
 }
 

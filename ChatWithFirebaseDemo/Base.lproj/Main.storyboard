@@ -31,9 +31,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Ab5-N8-bWV" kind="show" id="m6N-eI-96H"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -51,6 +48,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chat Demo" id="UhH-ge-Bz6">
+                        <barButtonItem key="backBarButtonItem" title=" " id="RSJ-HG-3l8"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KgG-uR-bW3">
                             <connections>
                                 <action selector="createChannel" destination="BYZ-38-t0r" id="7mY-sf-u9I"/>
@@ -59,6 +57,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Bzc-mB-yJx" id="TVK-Bf-UMD"/>
+                        <segue destination="Ab5-N8-bWV" kind="show" identifier="ShowChannel" id="Qpz-S9-Fkb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +87,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bVc-of-tt1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eh6-79-0JJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eh6-79-0JJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

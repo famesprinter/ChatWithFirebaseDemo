@@ -15,6 +15,10 @@ class ChannelsListInteractor {
     private var channelRefHandle: FIRDatabaseHandle?
 
     // MARK: - Function
+    func FIRChannelRef() -> FIRDatabaseReference {
+        return FIRDatabase.database().reference().child(FIRChild)
+    }
+    
     func FIRCreateChannel(cName: String) {
         let channelRef = FIRDatabase.database().reference().child(FIRChild)
         let newChannelRef = channelRef.childByAutoId()
