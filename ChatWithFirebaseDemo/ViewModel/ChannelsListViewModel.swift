@@ -27,13 +27,7 @@ class ChannelsListViewModel {
     
     // API
     func createChannel() {
-        interactor.FIRCreateChannel(cName: "Channel \(channels.count+1)",
-                                    complete: { () in
-                                        print("Create Channel Sucess :))")
-        },
-                                    fail: { () in
-                                        print("Create Channel Fail!!")
-        })
+        interactor.FIRCreateChannel(cName: "Channel \(channels.count+1)")
     }
     
     func observeChannels() {

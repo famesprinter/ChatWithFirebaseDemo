@@ -16,7 +16,6 @@ class ChannelsListViewController: UIViewController {
     let viewModel = ChannelsListViewModel()
     let channelCellIdentifier = "ChannelCell"
     
-    
     // MARK: = Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +25,11 @@ class ChannelsListViewController: UIViewController {
     
     deinit {
         viewModel.removeObserveChannels()
+    }
+    
+    // MARK: - IBAction
+    @IBAction func createChannel() {
+        viewModel.createChannel()
     }
 }
 
