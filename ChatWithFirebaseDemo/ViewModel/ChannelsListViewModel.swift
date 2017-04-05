@@ -25,10 +25,6 @@ class ChannelsListViewModel {
         return channels[row].name
     }
     
-    func channelRef(child: String) -> FIRDatabaseReference {
-        return interactor.FIRChannelRef().child(child)
-    }
-    
     // API
     func createChannel() {
         interactor.FIRCreateChannel(cName: "Channel \(channels.count+1)")

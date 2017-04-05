@@ -20,6 +20,7 @@
 		F06EDA171E94A4F300EE07BC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA161E94A4F300EE07BC /* Channel.swift */; };
 		F06EDA1A1E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */; };
 		F06EDA1C1E94C8AC00EE07BC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA1B1E94C8AC00EE07BC /* ChatViewController.swift */; };
+		F06EDA1E1E94D74800EE07BC /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = F06EDA1D1E94D74800EE07BC /* Avatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F06EDA161E94A4F300EE07BC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModelDelegate.swift; sourceTree = "<group>"; };
 		F06EDA1B1E94C8AC00EE07BC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F06EDA1D1E94D74800EE07BC /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				F030C8121E724DC1008C85C1 /* Assets.xcassets */,
+				F06EDA1D1E94D74800EE07BC /* Avatar.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06EDA1E1E94D74800EE07BC /* Avatar.png in Resources */,
 				F030C8161E724DC1008C85C1 /* LaunchScreen.storyboard in Resources */,
 				F030C81E1E7253C6008C85C1 /* GoogleService-Info.plist in Resources */,
 				F030C8131E724DC1008C85C1 /* Assets.xcassets in Resources */,

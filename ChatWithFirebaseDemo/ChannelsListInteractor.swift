@@ -11,16 +11,12 @@ import Firebase
 
 class ChannelsListInteractor {
     // MARK: - Variable
+    private(set) lazy var channelRef = FIRDatabase.database().reference().child("channels")
     private let FIRChild = "channels"
     private var channelRefHandle: FIRDatabaseHandle?
 
     // MARK: - Function
-    func FIRChannelRef() -> FIRDatabaseReference {
-        return FIRDatabase.database().reference().child(FIRChild)
-    }
-    
     func FIRCreateChannel(cName: String) {
-        let channelRef = FIRDatabase.database().reference().child(FIRChild)
         let newChannelRef = channelRef.childByAutoId()
         let channelItem = ["name": cName]
         newChannelRef.setValue(channelItem)
@@ -28,7 +24,6 @@ class ChannelsListInteractor {
     
     func FIRObserveChannels(complete: @escaping (FIRDataSnapshot) -> (),
                             fail: @escaping () -> ()) {
-        let channelRef = FIRDatabase.database().reference().child(FIRChild)
         channelRefHandle = channelRef.observe(.childAdded, with: { (snapshot) -> Void in
             let channelData = snapshot.value as! Dictionary<String, AnyObject>
             if let name = channelData["name"] as! String!, name.characters.count > 0 {
@@ -41,7 +36,6 @@ class ChannelsListInteractor {
     
     func FIRRemoveObserveChannels(complete: @escaping () -> (),
                                   fail: @escaping () -> ()) {
-        let channelRef = FIRDatabase.database().reference().child(FIRChild)
         if let refHandle = channelRefHandle {
             channelRef.removeObserver(withHandle: refHandle)
             complete()
