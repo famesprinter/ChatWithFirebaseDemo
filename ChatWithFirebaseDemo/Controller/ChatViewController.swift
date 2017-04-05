@@ -27,7 +27,8 @@ class ChatViewController: JSQMessagesViewController {
 
         viewModel.configureDelegate(delegate: self)
         senderDisplayName = "FameSprinteR"
-        senderId = channel?.id
+        senderId = viewModel.context.uID()
+        viewModel.observeMessages(chId: (channel?.id)!)
     }
     
     override func viewDidAppear(_ animated: Bool) {

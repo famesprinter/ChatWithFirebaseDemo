@@ -11,6 +11,7 @@ import JSQMessagesViewController
 
 class ChatViewModel {
     // MARK: Variable
+    let context = Context.context
     private weak var delegate: ChatViewModelDelegate?
     private let interactor = ChatInteractor()
     private(set) var messages = [JSQMessage]()
@@ -35,9 +36,12 @@ class ChatViewModel {
     func observeMessages(chId: String) {
         interactor.FIRObserveMessages(cannelId: chId,
                                       complete: { (messageData: [String:String]) in
-                                        let id = messageData["senderId"]
-                                        let name = messageData["senderName"]
-                                        let text = messageData["text"]
+                                        let id = messageData["senderId"]!
+                                        let name = messageData["senderName"]!
+                                        let text = messageData["text"]!
+                                        self.delegate?.observeMessageSuccess(id: id,
+                                                                             name: name,
+                                                                             text: text)
         },
                                       fail: { () in
                                         print("Error! Could not decode message data")
