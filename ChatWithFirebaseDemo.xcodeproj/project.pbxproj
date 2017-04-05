@@ -18,6 +18,7 @@
 		F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */; };
 		F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */; };
 		F06EDA171E94A4F300EE07BC /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA161E94A4F300EE07BC /* Channel.swift */; };
+		F06EDA1A1E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F030C8291E72618C008C85C1 /* ChannelsListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModel.swift; sourceTree = "<group>"; };
 		F06EDA131E94A12200EE07BC /* ChannelsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListInteractor.swift; sourceTree = "<group>"; };
 		F06EDA161E94A4F300EE07BC /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				F030C8201E725D2E008C85C1 /* Assets */,
 				F030C8211E725D38008C85C1 /* Layout */,
 				F030C8251E725E32008C85C1 /* Context */,
+				F06EDA181E94A7AB00EE07BC /* Protocol */,
 				F06EDA121E94A0FD00EE07BC /* Interactor */,
 				F030C8221E725D46008C85C1 /* Controller */,
 				F030C8281E726162008C85C1 /* ViewModel */,
@@ -165,6 +168,14 @@
 				F06EDA161E94A4F300EE07BC /* Channel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		F06EDA181E94A7AB00EE07BC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F06EDA191E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 			files = (
 				F030C8271E725E55008C85C1 /* Context.swift in Sources */,
 				F06EDA171E94A4F300EE07BC /* Channel.swift in Sources */,
+				F06EDA1A1E94A7CB00EE07BC /* ChannelsListViewModelDelegate.swift in Sources */,
 				F030C8241E725DA2008C85C1 /* ChannelsListViewController.swift in Sources */,
 				F06EDA141E94A12200EE07BC /* ChannelsListInteractor.swift in Sources */,
 				F030C82A1E72618C008C85C1 /* ChannelsListViewModel.swift in Sources */,

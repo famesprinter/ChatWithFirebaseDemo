@@ -11,11 +11,16 @@ import Firebase
 
 class ChannelsListViewModel {
     // MARK: - Variable
+    private weak var delegate: ChannelsListViewModelDelegate?
     let context = Context.context
     let interactor = ChannelsListInteractor()
-    var channels = [Channel]()
+    private(set) var channels = [Channel]()
     
     // MARK: - Function
+    func configureDelegate(delegate: ChannelsListViewModelDelegate) {
+        self.delegate = delegate
+    }
+    
     func channelData(row: Int) -> String {
         return channels[row].name
     }
@@ -27,6 +32,7 @@ class ChannelsListViewModel {
                                         let id = snapshot.key
                                         self.channels.append(Channel(id: id,
                                                                      name: channelData["name"] as! String))
+                                        self.delegate?.ObserveChannelSuccess()
         },
                                       fail: { () in
                                         print("Error! Could not decode channel data")

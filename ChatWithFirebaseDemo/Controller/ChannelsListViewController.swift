@@ -37,3 +37,10 @@ extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
 }
+
+// MARK: - ChannelsListViewModelDelegate
+extension ChannelsListViewController: ChannelsListViewModelDelegate {
+    func ObserveChannelSuccess() {
+        tableView.reloadData()
+    }
+}
