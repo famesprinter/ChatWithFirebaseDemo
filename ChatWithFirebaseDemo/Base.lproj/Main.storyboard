@@ -47,7 +47,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bzc-mB-yJx" secondAttribute="bottom" id="bb3-mw-qGM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Chat Demo" id="UhH-ge-Bz6"/>
+                    <navigationItem key="navigationItem" title="Chat Demo" id="UhH-ge-Bz6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KgG-uR-bW3">
+                            <connections>
+                                <action selector="createChannel" destination="BYZ-38-t0r" id="7mY-sf-u9I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Bzc-mB-yJx" id="TVK-Bf-UMD"/>
                     </connections>

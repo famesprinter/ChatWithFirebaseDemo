@@ -20,6 +20,7 @@ class ChannelsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.configureDelegate(delegate: self)
         viewModel.observeChannels()
     }
     
@@ -44,6 +45,10 @@ extension ChannelsListViewController: UITableViewDelegate, UITableViewDataSource
                                                  for: indexPath)
         cell.textLabel?.text = viewModel.channelData(row: indexPath.row)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
