@@ -11,11 +11,19 @@ import JSQMessagesViewController
 
 class ChatViewModel {
     // MARK: Variable
+    private let interactor = ChatInteractor()
     private(set) var messages = [JSQMessage]()
     
     // MARK: Function
     func addMessage(message: JSQMessage) {
         messages.append(message)
+    }
+    
+    func pressSend(chId: String, sendId: String, sendName: String, text: String) {
+        interactor.FIRStoreMessage(cannelId: chId,
+                                   sendId: sendId,
+                                   sendName: sendName,
+                                   text: text)
     }
     
     // Collection View

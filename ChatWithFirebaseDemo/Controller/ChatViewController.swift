@@ -31,14 +31,6 @@ class ChatViewController: JSQMessagesViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        // messages from someone else
-        addMessage(withId: "foo", name: "Mr.Bolt", text: "I am so fast!")
-        // messages sent from local sender
-        addMessage(withId: senderId, name: "Me", text: "I bet I can run faster than you!")
-        addMessage(withId: senderId, name: "Me", text: "I like to run!")
-        // animates the receiving of a new message on the view
-        finishReceivingMessage()
     }
     
     // MARK: Function
@@ -93,5 +85,15 @@ class ChatViewController: JSQMessagesViewController {
             cell.textView?.textColor = UIColor.black
         }
         return cell
+    }
+    
+    // MARK: JSQDelegate
+    override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+        viewModel.pressSend(chId: (channel?.id)!,
+                            sendId: senderId,
+                            sendName: senderDisplayName,
+                            text: text)
+        JSQSystemSoundPlayer.jsq_playMessageSentSound()
+        finishSendingMessage()
     }
 }
